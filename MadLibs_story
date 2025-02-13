@@ -1,0 +1,31 @@
+# Mad libs story generator
+
+print("Welcome to Mad Libs! fill in the blanks to create story za jaba.\n")
+
+# Getting user inputs
+
+name = input("Enter a name: ")
+place = input("Enter a place: ")
+occasion = input("Enter the occasion: ")
+verb = input("Enter the verb: ")
+adjective = input("Enter the adjective: ")
+food = input("Enter the food: ")
+greeting = input("Enter greeting:")
+
+#conditional statement
+
+if greeting.lower() == "musangarire":
+ reaction = ("Watu wakaangua kicheko! 😂")
+else:
+ reaction = ("Silence... 🤨")
+
+#printing the madlibs story
+
+story = (f"""
+In {place}, during {occasion},Mr. Rigathi Gachagua grabbed the mic and shouted, '{greeting}!' 
+{name} whispered, 'Eeeh, huyu ameanza kama Ruto!' 
+{reaction} 
+The crowd continued to {verb}, enjoying {food}. A {adjective} day indeed!
+""")
+
+print(story)
